@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numero1" placeholder="ingresa un numero">
+    <input type="number" id="numero2" placeholder="ingresa un numero">
+    <input type="number" id="numero3" placeholder="ingresa un numero">
+
+    <button onclick="verificarNumero()">Verificar</button>
+    <button></button>
+    <p id="resultado"></p>
+    <script>
+function verificarNumero() {
+            const numero1 =document.getElementById('numero1').value;
+            const numero2 =document.getElementById('numero2').value;
+            const numero3 =document.getElementById('numero3').value;
+
+
+            const numeroConvertido1 = parseInt(numero1);
+            const numeroConvertido2 = parseInt(numero2);
+            const numeroConvertido3 = parseInt(numero3);
+
+
+            const resultado = document.getElementById('resultado');
+
+            if (numeroConvertido1 < numeroConvertido3 === 0) {
+                resultado.textContent = `Se sumaran los numeros: ${numeroConvertido1}, ${numeroConvertido2} y ${numeroConvertido3} el resultado es desconcido`;
+
+            } else {
+                resultado.textContent = `el usuario no le funciono el codigo y se le quedo in carga la compu`;
+            }
+        }
+    </script>
+</body>
+</html>
